@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeopardy</title>
+    <link rel="stylesheet" href="style-round-1.css" />
+    <style>
+      .cat-1T,
+      .cat-2T,
+      .cat-3T,
+      .cat-4T,
+      .cat-5T,
+      .cat-6T {
+        background-color: rgb(37, 37, 209) !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>FIRST ROUND</h1>
+      <h2 id = "player-turn">Player One's Turn</h2>
+    </header>
+
+    <div class="game-board">
+      <div class="cat-1T categorySports">SPORTS</div>
+      <div class="cat-2T categoryScience">SCIENCE</div>
+      <div class="cat-3T categoryAnimals">ANIMALS</div>
+      <div class="cat-4T categoryComic-books">COMIC BOOKS</div>
+      <div class="cat-5T categoryTravel">TRAVEL</div>
+      <div class="cat-6T categoryMusic">MUSIC</div>
+
+      <div class="a1 cat-1 200 SPORTS">200</div>
+      <div class="b1 cat-2 200 SCINECE">200</div>
+      <div class="c1 cat-3 200 ANIMALS">200</div>
+      <div class="d1 cat-4 200 COMIC BOOKS">200</div>
+      <div class="e1 cat-5 200 travel">200</div>
+      <div class="f1 cat-6 200 music">200</div>
+
+      <div class="a2 cat-1 400 SPORTS">400</div>
+      <div class="b2 cat-2 400 SCINECE">400</div>
+      <div class="c2 cat-3 400 ANIMALS">400</div>
+      <div class="d2 cat-4 400 COMIC BOOKS">400</div>
+      <div class="e2 cat-5 400 travel">400</div>
+      <div class="f2 cat-6 400 music">400</div>
+
+      <div class="a3 cat-1 600 SPORTS">600</div>
+      <div class="b3 cat-2 600 SCINECE">600</div>
+      <div class="c3 cat-3 600 ANIMALS">600</div>
+      <div class="d3 cat-4 600 COMIC BOOKS">600</div>
+      <div class="e3 cat-5 600 travel">600</div>
+      <div class="f3 cat-6 600 music">600</div>
+
+      <div class="a4 cat-1 800 SPORTS">800</div>
+      <div class="b4 cat-2 800 SCIENCE">800</div>
+      <div class="c4 cat-3 800 ANIMALS">800</div>
+      <div class="d4 cat-4 800 COMIC BOOKS">800</div>
+      <div class="e4 cat-5 800 travel">800</div>
+      <div class="f4 cat-6 800 music">800</div>
+
+      <div class="a5 cat-1 1000 SPORTS">1000</div>
+      <div class="b5 cat-2 1000 SCIENCE">1000</div>
+      <div class="c5 cat-3 1000 ANIMALS">1000</div>
+      <div class="d5 cat-4 1000 COMIC BOOKS">1000</div>
+      <div class="e5 cat-5 1000 travel">1000</div>
+      <div class="f5 cat-6 1000 music">1000</div>
+    </div>
+
+    <div class="answer-space">
+      <form>
+        <input type="text" placeholder="INPUT GUESS" />
+      </form>
+    </div>
+
+    <!-- TODO: GUESS AND PASS BUTTONS GO HERE -->
+    <div class="flex-container-guess-pass">
+      <button>GUESS</button>
+      <button>PASS</button>
+    </div>
+
+    <div class="player-scores">
+      <div id = "player1rd" class="player-1-score">Player 1 Score: 0 points</div>
+      <div id = "player2rd" class="player-2-score">Player 2 Score: 0 points</div>
+    </div>
+
+    <div id="flex-nav">
+      <nav class="links">
+        <button>
+          <a href="round-2.html">ROUND 2</a>
+        </button>
+      </nav>
+    </div>
+
+    <!-- Trigger/Open The Modal -->
+<!-- <button id="myBtn">Open Modal</button> -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p id="modal-text">Some text in the Modal..</p>
+    <div class="answer-space">
+    
+        <input type="text" class="questionAnswer" placeholder="INPUT GUESS" /><br>
+        <button id ="guess-button">GUESS</button>
+        <button>PASS</button>
+        <!-- <input type="button" value="GUESS" id = "guess-answer">
+        <input type="button" value="PASS"> -->
+
+    </div>
+  </div>
+
+</div>
+
+    <div class="flex-footer">
+      <footer>JEOPARDY BY JORDAN KAUFMAN</footer>
+    </div>
+
+    <!-- Do not change the script source. Allows import/export to work. -->
+    <script src="scripts/round-1.js" type="module"></script>
+  </body>
+</html>

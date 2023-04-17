@@ -1,0 +1,280 @@
+header {
+  display: flex;
+  height: 150px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgb(0, 212, 255);
+  background: radial-gradient(
+    circle,
+    rgba(0, 212, 255, 1) 20%,
+    rgba(162, 162, 162, 1) 100%
+  );
+  margin: 2px 0 2px 0;
+  font-size: 1vw;
+}
+
+.game-board > div {
+  display: flex;
+  text-align: center;
+  background-color: blue;
+  color: white;
+  border: solid darkblue 2px;
+  padding: 20px;
+  font-size: 1.5vw;
+  justify-content: center;
+  align-items: center;
+  min-height: 40px;
+  flex-wrap: wrap;
+  max-height: 600px;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  border: 1px solid darkblue;
+  justify-content: center;
+  gap: 2px;
+  margin: 2px;
+  align-content: center;
+  grid-template-areas:
+    "cat-1 cat-2 cat-3 cat-4 cat-5 cat-6"
+    "a1 b1 c1 d1 e1 f1"
+    "a2 b2 c2 d2 e2 f2"
+    "a3 b3 c3 d3 e3 f3"
+    "a4 b4 c4 d4 e4 f4"
+    "a5 b5 c5 d5 e5 f5";
+}
+
+/* grid area categories */
+.sports {
+  grid-area: cat-1;
+}
+.science {
+  grid-area: cat-2;
+}
+.animals {
+  grid-area: cat-3;
+}
+.comic-books {
+  grid-area: cat-4;
+}
+.travel {
+  grid-area: cat-5;
+}
+.music {
+  grid-area: cat-6;
+}
+
+/* grid area row 1 */
+.a1 {
+  grid-area: a1;
+}
+.b1 {
+  grid-area: b1;
+}
+.c1 {
+  grid-area: c1;
+}
+.d1 {
+  grid-area: d1;
+}
+.e1 {
+  grid-area: e1;
+}
+.f1 {
+  grid-area: f1;
+}
+
+/* grid area row 2 */
+.a2 {
+  grid-area: a2;
+}
+.b2 {
+  grid-area: b2;
+}
+.c2 {
+  grid-area: c2;
+}
+.d2 {
+  grid-area: d2;
+}
+.e2 {
+  grid-area: e2;
+}
+.f2 {
+  grid-area: f2;
+}
+
+/* grid area row 3 */
+.a3 {
+  grid-area: a3;
+}
+.b3 {
+  grid-area: b3;
+}
+.c3 {
+  grid-area: c3;
+}
+.d3 {
+  grid-area: d3;
+}
+.e3 {
+  grid-area: e3;
+}
+.f3 {
+  grid-area: f3;
+}
+
+/* grid area row 4 */
+.a4 {
+  grid-area: a4;
+}
+.b4 {
+  grid-area: b4;
+}
+.c4 {
+  grid-area: c4;
+}
+.d4 {
+  grid-area: d4;
+}
+.e4 {
+  grid-area: e4;
+}
+.f4 {
+  grid-area: f4;
+}
+
+/* grid area row 5 */
+.a5 {
+  grid-area: a5;
+}
+.b5 {
+  grid-area: b5;
+}
+.c5 {
+  grid-area: c5;
+}
+.d5 {
+  grid-area: d5;
+}
+.e5 {
+  grid-area: e5;
+}
+.f5 {
+  grid-area: f5;
+}
+
+.flex-footer {
+  display: flex;
+  justify-content: center;
+  font-size: 2vw;
+}
+
+#flex-nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 60px 20px 60px;
+}
+
+#flex-nav > div {
+  flex: 2;
+}
+
+nav > button {
+  align-items: center;
+  padding: 15px;
+  font-size: 1.5vw;
+}
+.flex-container-guess-pass {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.flex-container-guess-pass > button {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  font-size: 1.5vw;
+}
+
+.player-scores {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 40px 10px 40px;
+  font-size: 2vw;
+}
+
+.answer-space {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Input animation around text box */
+input[type="text"] {
+  height: 3vw;
+  width: 12vw;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+  padding: 2px 0px 2px 2px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #aeb5bf;
+  font-size: 1vw;
+  text-align: center;
+}
+input[type="text"]:focus,
+textarea:focus {
+  box-shadow: 0 0 20px rgb(86, 249, 252);
+  padding: 2px 2px 2px 2px;
+  margin: 5px 1px 5px 1px;
+  border: 2px solid rgb(86, 249, 252);
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: #ffffff; 
+  background-color: rgb(255, 255, 255); 
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: darkblue;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  color: #ffffff;
+  text-align: center;
+  
+} 
+
+/* The Close Button */
+ .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

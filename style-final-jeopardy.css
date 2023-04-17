@@ -1,0 +1,143 @@
+* {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+header {
+  display: flex;
+  height: 150px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  font-size: 1vw;
+  background: rgb(0, 212, 255);
+  background: radial-gradient(
+    circle,
+    rgba(0, 212, 255, 1) 20%,
+    rgba(162, 162, 162, 1) 100%
+  );
+  margin: 2px 0 2px 0;
+}
+
+#final-category {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 5px 20px 10px 20px;
+  align-content: center;
+  align-items: center;
+  background-color: rgb(37, 37, 209) !important;
+  color: white;
+  font-size: 3vw;
+  height: 100px;
+  border: solid darkblue 5px;
+}
+
+/*! flip card animation */
+.flip-card {
+  background-color: transparent;
+  perspective: 1000px;
+  min-height: 40px;
+  height: 225px;
+  align-items: center;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1.5s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.final-question-front,
+.final-question-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.final-question-front {
+  background-color: blue;
+  color: white;
+  border: solid darkblue 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: 3vw;
+  align-items: center;
+}
+
+.final-question-back {
+  background-color: blue;
+  color: white;
+  border: solid darkblue 5px;
+  transform: rotateY(180deg);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: 3vw;
+  align-items: center;
+}
+/*! flip card animation */
+
+#wager-answer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Input animation around text box */
+input[type="text"] {
+  height: 3vw;
+  width: 12vw;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+  padding: 2px 0px 2px 2px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #aeb5bf;
+  font-size: 1vw;
+  text-align: center;
+}
+input[type="text"]:focus,
+textarea:focus {
+  box-shadow: 0 0 20px rgb(86, 249, 252);
+  padding: 2px 2px 2px 2px;
+  margin: 5px 1px 5px 1px;
+  border: 2px solid rgb(86, 249, 252);
+}
+/* end animation around text box */
+#bet-button {
+  display: flex;
+  justify-content: center;
+  padding: 20px 60px 20px 60px;
+  margin: 5px 20px 20px 20px;
+}
+button {
+  align-items: center;
+  padding: 15px;
+  font-size: 1.5vw;
+}
+
+.flex-footer {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  text-align: center;
+  font-size: 2vw;
+}
